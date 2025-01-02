@@ -1,6 +1,17 @@
 # HomeTabX
 Android Tablet Hosting Home Assistant
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1eb697df-cb51-44ba-8eb3-2bbbe36653b6" width="200" height="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/1c46d25d-d03f-431b-bf8c-819d35365dee" width="200" height="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/7d4b9c43-c835-45e0-b535-0671b3e19ab8" width="200" height="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/a4225b95-a9f2-436e-9546-c0fad85cc82e" width="200" height="200" />
+</p>
+
+# Background Details
 Tablet Model: Xiaomi Pad 4
 
 Operating System: Android 9
