@@ -55,14 +55,18 @@ The Qemu VM was setup with the following parameters:
 
 The system was booted, Alpine Linux installation took place and and Alpine Linux was ready to be used.
 # Home Assistant Setup
-In order to setup home assistant server, the only lightweight option was via docker. Docker was installed and a container was created to host the home assistant server. Home Assistant inside the container was configured to use the local configuration file previously created and always restart unless explicitly terminated.
+In order to setup home assistant server, the only lightweight option was via docker. 
+
+Docker was installed and a container was created to host the home assistant server. 
+
+Home Assistant inside the container was configured to use the local configuration file previously created and always restart unless explicitly terminated.
 # Access Control
 An account was created for each user in order to allow access to the members. Only one account was set to have administrator access and rights to ensure only authorized changes are made, maintaining system security and minimizing the risk of accidental or malicious modifications.
 
 This approach aligns with the principles outlined in NIST Cyber security Framework such as the Least Privilege Principle, giving users minimum access to only perform their tasks and reduce attack surfaces.
 # Future Improvements
 * Home Assistant should be accessible from outside the local network. 
- - A future improvement would be to setup a secure VPN connection to the router enabling users to access Home Assistant from outside the network. In order to achieve this, the network provider would need to switch to IPv6 as its currently using CGNAT making it impossible to access the router using it's public IPv4 address.
+  - A future improvement would be to setup a secure VPN connection to the router enabling users to access Home Assistant from outside the network. In order to achieve this, the network provider would need to switch to IPv6 as its currently using CGNAT making it impossible to access the router using it's public IPv4 address.
 * Ensure regular back ups and cloud back up automation for easy recovery in case of system failure.
 * Ensure regular updates to address know vulnerabilities and allow compatibility with new integrations.
 * Create customized dashboards for each user and device-specific views.
