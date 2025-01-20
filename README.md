@@ -72,7 +72,9 @@ This approach aligns with the principles outlined in NIST Cyber security Framewo
 * Create customized dashboards for each user and device-specific views.
 
 # Overcoming CGNAT
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4804c929-ffa4-4b6f-94eb-fe28253b3f2a" width="200" height="200" />
+</p>
 As previously mentioned, accessing Home Assistant outside the local network was impossible due to the internet provider using CGNAT which is a convenient way of handling multiple IP addresses grouping them together into 1 and minimizing the number of IPv4 addresses they need to buy or rent.
 It's also worth mentioning that even though the home router had the ability to setup a secure virtual network for different users, it was impossible to access it outside of the local network. In order to test this, an account was created specifically for this purpose. The relevant information were entered into the android device including protocols used and pre-shared keys. Through testing, it was identified that locally activating the VPN shown the device being connected and the router indicating a new virtual IP for the user. However, when switching to 5G or external network, the VPN connection couldn't be established indicating once again the limitations of CGNAT.
 
