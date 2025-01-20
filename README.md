@@ -70,3 +70,14 @@ This approach aligns with the principles outlined in NIST Cyber security Framewo
 * Ensure regular back ups and cloud back up automation for easy recovery in case of system failure.
 * Ensure regular updates to address know vulnerabilities and allow compatibility with new integrations.
 * Create customized dashboards for each user and device-specific views.
+
+# Overcoming CGNAT
+
+As previously mentioned, accessing Home Assistant outside the local network was impossible due to the internet provider using CGNAT which is a convenient way of handling multiple IP addresses grouping them together into 1 and minimizing the number of IPv4 addresses they need to buy or rent.
+It's also worth mentioning that even though the home router had the ability to setup a secure virtual network for different users, it was impossible to access it outside of the local network. In order to test this, an account was created specifically for this purpose. The relevant information were entered into the android device including protocols used and pre-shared keys. Through testing, it was identified that locally activating the VPN shown the device being connected and the router indicating a new virtual IP for the user. However, when switching to 5G or external network, the VPN connection couldn't be established indicating once again the limitations of CGNAT.
+
+In order to bypass CGNAT, research was conducted to identify alternatives that could be used in such cases while also maintaining network security. An application called Tailscale was found and explored. This application enabled the device inside the network running Home Assistant to make a connection with a public server. After creating an account, the android application was installed enabling the tablet to be listed as a device. On another device, Tailscale was activated and similarly to a VPN, a connection was established to the public server revealing the IPv4 address of the tablet hosting Home Assistant.
+
+Now, using the Home Assistant application on a personal device, 2 IP addresses could be entered. One for accessing Home Assistant locally and an external IP address for accessing Home Assistant while being away from the home network. The external IP address was generated from Tailscale illustrating that in order to access Home Assistant the user needs to either be in the local network or enabling the VPN via the Tailscale application and then opening the app to access the Home Assistant.
+
+All in all, connection to the Home Assistant was established and the CGNAT of the internet provider was bypassed, enabling access to Home Assistant wherever the user might be.
